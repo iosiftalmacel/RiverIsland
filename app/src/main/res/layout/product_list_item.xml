@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="4dp">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:background="#e8e8e8"
+        android:adjustViewBounds="true"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image"
+        android:layout_marginTop="5dp"
+        android:singleLine="true"
+        android:text="CHLOE"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:singleLine="true"
+        android:text="Nile leather cross-boacy bag"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption" />
+
+    <TextView
+        android:id="@+id/cost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/desc"
+        android:layout_marginTop="5dp"
+        android:singleLine="true"
+        android:text="$1,340.00"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+        android:textStyle="bold"
+        android:paddingBottom="8dp"/>
+</RelativeLayout>
